@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="theme-color" content="#e54c2a">
+        <!-- Favicon -->
+        <link type="image/x-icon" rel="shortcut icon" href="favicon.png" />
+        <title>OFANTE - Restaurant and Drinks</title>
+        <meta name="description" content="OFANTE - Restaurant, food and Drinks "> 
+
+        <!-- Bootstrap stylesheet -->
+        <link href="assets/libs/bootstrap-4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <!-- icofont -->
+        <link href="assets/libs/icofont/css/icofont.css" rel="stylesheet" type="text/css" />
+        <!-- crousel css -->
+        <link href="assets/libs/owlcarousel2/assets/owl.carousel.min.css" rel="stylesheet" type="text/css" />
+        <!-- Animated Headlines css -->
+        <link href="assets/libs/animated-headlines/animated-headlines.css" rel="stylesheet" type="text/css" />
+        <!-- mb.YTPlayer css -->
+        <link href="assets/libs/mb.YTPlayer/css/jquery.mb.YTPlayer.min.css" rel="stylesheet" type="text/css" />
+        <!-- Theme Stylesheet -->
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+        <!-- Switch Color Style css -->
+        <link href="assets/css/color/skin-default.css" data-style="styles" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+            <!--[if lt IE 8]>
+               <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+           <![endif]-->  
+
+            <!-- Loader Start -->
+            <div class="loader">
+                <div class="loader-inner">
+                    <h4>Ofante Cooking in progress..</h4>
+                    <div id="cooking">
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div id="area">
+                            <div id="sides">
+                                <div id="pan"></div>
+                                <div id="handle"></div>
+                            </div>
+                            <div id="pancake">
+                                <div id="pastry"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Loader End -->
+
+            <!--  Header Start  -->
+            <header>
+                <!--Top Header Start -->
+                <div class="top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 col-12">
+                                <ul class="list-inline float-left icon">
+                                    <li class="list-inline-item"><a href="#"><i class="icofont icofont-phone"></i> Hotline : 123 456 7890</a></li>
+                                </ul>
+                                <!-- Header Social Start -->
+                                <ul class="list-inline float-right icon">
+                                    <li class="list-inline-item"><a href="#"><i class="icofont icofont-cart-alt"></i> Cart</a></li>
+                                    <li class="list-inline-item dropdown">
+                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icofont icofont-ui-user"></i> My Account</a>
+                                        <ul class="dropdown-menu dropdown-menu-right drophover" aria-labelledby="dropdownMenuLink">
+                                            <li class="dropdown-item"><a href="#">Login</a></li>
+                                            <li class="dropdown-item"><a href="#">Register</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <ul class="list-inline social">
+                                            <li class="list-inline-item"><a href="#" target="_blank"><i class="icofont icofont-social-facebook"></i></a></li>
+                                            <li class="list-inline-item"><a href="#" target="_blank"><i class="icofont icofont-social-twitter"></i></a></li>
+                                            <li class="list-inline-item"><a href="#" target="_blank"><i class="icofont icofont-social-google-plus"></i></a></li>
+                                            <li class="list-inline-item"><a href="#" target="_blank"><i class="icofont icofont-social-instagram"></i></a></li>
+                                            <li class="list-inline-item"><a href="#" target="_blank"><i class="icofont icofont-social-pinterest"></i></a></li>
+                                            <li class="list-inline-item"><a href="#" target="_blank"><i class="icofont icofont-social-youtube-play"></i></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <!-- Header Social End -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Top Header End -->
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-12">
+                            <!-- Logo Start  -->
+                            <div id="logo">
+                                <a href="index.html"><img id="logo_img" class="img-fluid" src="assets/images/logo/FANTE (3).png" alt="logo" title="logo" /></a>
+                            </div>
+                            <!-- Logo End  -->
+                        </div>
+
+                        <div class="col-md-7 col-sm-6 col-12 paddleft">
+                            <!-- Main Menu Start  -->
+                            <div id="menu">	
+                                <nav class="navbar navbar-expand-md">
+                                    <div class="navbar-header">
+                                        <span class="menutext d-block d-md-none">Menu</span>
+                                        <button data-target=".navbar-ex1-collapse" data-toggle="collapse" class="btn btn-navbar navbar-toggler" type="button"><i class="icofont icofont-navigation-menu"></i></button>
+                                    </div>
+                                    <div class="collapse navbar-collapse navbar-ex1-collapse padd0">
+                                        <ul class="nav navbar-nav">
+                                            <li class="nav-item"><a href="index.html">Home</a></li>
+                                            <li class="nav-item"><a href="#">about us</a></li>
+                                            <li class="nav-item dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Menu</a>
+                                                <div class="dropdown-menu">
+                                                    <div class="dropdown-inner">
+                                                        <ul class="list-unstyled">
+                                                            <li><a href="#">Food Menu</a></li>
+                                                            <li><a href="#">Drinks Menu</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                          
+                                            <li class="nav-item"><a href="#">Blog</a></li>
+                                            <li class="nav-item"><a href="#">Contact us</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                            <!-- Main Menu End -->
+                        </div>
+                        <div class="col-md-2 col-sm-12 col-12 button-top paddleft">
+                            <a class="btn-primary btn" href='#'>Book Your Table</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- Header End   -->
+
+            <!-- Slider Start -->
+            <div class="slide"> 
+                <div class="slideshow owl-carousel">
+                    <!-- Slider Backround Image Start  -->
+                    <div class="item">
+                        <img src="assets/images/our-menu/food menu/egusi soup.jpeg" alt="banner" title="banner" class="img-responsive"/>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/our-menu/food menu/jellof rice (2).jpeg" alt="banner" title="banner" class="img-responsive"/>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/our-menu/Drink menu/soft drink/palmwine.jpeg" alt="banner" title="banner" class="img-responsive"/>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/our-menu/food menu/vegetable soup.jpeg" alt="banner" title="banner" class="img-responsive"/>
+                    </div>
+                    <!-- Slider Backround Image End -->
+                </div>
+
+                <!-- Slide Detail Start  -->
+                <div class="slide-detail">
+                    <div class="container">
+                        <div class="cd-headline clip">
+                            <h4>LOVES <span class="cd-words-wrapper">
+                                    <b class="is-visible">HEALTHY</b>
+                                    <b>QUALITY</b>
+                                    <b>TESTY</b>
+                                </span>AFRICAN FOOD</h4>
+                        </div>
+                        <p>Experience the vibrant flavors of Africa at OFANTE, where tradition meets taste in the heart of the UK. Whether you’re a seasoned enthusiast or exploring African cuisine for the first time, we’re here to make it unforgettable. Join us today and savor the true essence of Africa!</p>
+                        <a class="btn-primary btn btn-wide" href="#">Today's menu</a>
+                    </div>
+                </div>	
+                <!-- Slide Detail End  -->
+            </div>
+            <!-- Slider End  -->
+
+            <!-- Order Start  -->
+            <div class="order">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <!-- Title Content Start -->
+                        <div class="col-sm-12 commontop text-center">
+                            <h4>Order Delivery and take out</h4>
+                            <div class="divider style-1 center">
+                                <span class="hr-simple left"></span>
+                                <i class="icofont icofont-ui-press hr-icon"></i>
+                                <span class="hr-simple right"></span>
+                            </div>
+                            <p>Enjoy the convenience of our quick and reliable delivery and takeout services. Savor your favorite dishes from the comfort of your home or on the go. We bring deliciousness to your doorstep!</p>
+                        </div>
+                        <!-- Title Content End -->
+                        <div class="col-lg-7 col-sm-12">
+                            <!-- Search Form Start -->
+                            <form class="form-horizontal search-icon" method="post">
+                                <fieldset>
+                                    <div class="form-group">
+                                        <input name="s" value="" placeholder="Search keyword"  class="form-control" type="text">
+                                    </div>
+                                    <button type="submit" value="submit" class="btn btn-theme"><i class="icofont icofont-search"></i>Search</button>
+                                </fieldset>
+                            </form>
+                            <!-- Search Form End -->
+                            <ul class="list-inline text-center">
+                                <li class="list-inline-item">
+                                    <i class="icofont icofont-fast-food"></i>
+                                    <p>Select Food</p>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="icofont icofont-food-basket"></i>
+                                    <p>Order Food</p>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="icofont icofont-fast-delivery"></i>
+                                    <p>Delivery or Take Out</p>
+                                </li>
+                            </ul>
+                            <img src="assets/images/lines.png" alt="line" title="line" class="img-fluid" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Order End  -->
+
+            <!-- Popular Dishes Start -->
+            <div class="dishes">
+                <div class="container">
+                    <div class="row">
+                        <!-- Title Content Start -->
+                        <div class="col-sm-12 commontop text-center">
+                            <h4>Our Popular Dishes</h4>
+                            <div class="divider style-1 center">
+                                <span class="hr-simple left"></span>
+                                <i class="icofont icofont-ui-press hr-icon"></i>
+                                <span class="hr-simple right"></span>
+                            </div>
+                            <p>Enjoy our most in-demand dishes, crafted with fresh ingredients and bursting with flavor.</p>
+                        </div>
+                        <!-- Title Content End -->
+                        <div class="col-sm-12 ">
+                            <div class="dish owl-carousel">
+                                <div class="item">
+                                    <!-- Box Start -->
+                                    <div class=" box">
+                                        <a href="#"><img src="assets/images/our-menu/food menu/jellof rice (2).jpeg" alt="image" title="image" class="img-fluid" /></a>
+                                        <div class="caption">
+                                            <h4>Jellof Rice</h4>
+                                            <span>Rice
+                                                Tomatoes
+                                                Tomato paste
+                                                Bell peppers
+                                                Onions
+                                                Salt
+                                                Curry powder
+                                                Thyme
+                                                vegetable stock
+                                                Vegetable oil <br>
+                                                <b> Optional Additions:</b>
+                                                Protein (chicken, beef, shrimp, or fish)
+                                                Vegetables (peas, carrots, or green beans).</span>
+                                            <button class="captionP" type="button">£35</button>
+                                        </div>
+                                    </div>
+                                    <!-- Box End -->
+                                </div>
+                                <div class="item">
+                                    <!-- Box Start -->
+                                    <div class="box">
+                                        <a href="#"><img src="assets/images/our-menu/food menu/egusi soup.jpeg" alt="image" title="image" class="img-fluid" /></a>
+                                        <div class="caption">
+                                            <h4>Egusi Soup</h4>
+                                            <span>Egusi
+                                                Palm oil
+                                                Vegetables
+                                                Meat
+                                                Stockfish
+                                                Dry fish
+                                                Spices and Seasonings:
+                                                Crayfish 
+                                                Seasoning cubes 
+                                                Salt
+                                                Ground pepper
+                                                Meat stock
+                                                Water</span>
+                                                <button class="captionP" type="button">£50</button>
+                                        </div>
+                                    </div>
+                                    <!-- Box End -->
+                                </div>
+                                <div class="item">
+                                    <!-- Box Start -->
+                                    <div class="box">
+                                        <a href="#"><img src="assets/images/our-menu/food menu/vegetable soup.jpeg" alt="image" title="image" class="img-fluid" /></a>
+                                        <div class="caption">
+                                            <h4>Vegetable Soup</h4>
+                                            <span>Fresh vegetables (ugu leaves,  waterleaf)
+                                                Palm oil
+                                                Meat
+                                                Stockfish
+                                                Dry fish
+                                                Onions
+                                                Crayfish
+                                                Seasoning cubes
+                                                Salt
+                                                Ground pepper <br>
+                                               <b>Liquids:</b> 
+                                                Meat stock (from boiling your protein)
+                                                Water <br>
+                                               <b> Optional Additions:</b>
+                                                Prawns or shrimp (fresh or dried)
+                                                Periwinkles</span>
+                                                <button class="captionP" type="button">£45</button>
+                                        </div>
+                                    </div>
+                                    <!-- Box End -->
+                                </div>
+                                <div class="item">
+                                    <!-- Box Start -->
+                                    <div class="box">
+                                        <a href="#"><img src="assets/images/our-menu/food menu/fried rice.jpeg" alt="image" title="image" class="img-fluid" /></a>
+                                        <div class="caption">
+                                            <h4>Fried Rice</h4>
+                                            <span>Rice 
+                                                Mixed vegetables (carrots, green peas, sweet corn, green beans, and bell peppers)
+                                                Protein (chicken, shrimp, or beef)
+                                                Vegetable oil
+                                                Onions
+                                                Garlic
+                                                Curry powder
+                                                Thyme
+                                                Seasoning cubes
+                                                Salt
+                                                Ground pepper <br>
+                                               <b>Liquids:</b> 
+                                                Chicken or vegetable stock <br>
+                                               <b>Optional Additions:</b> 
+                                                Spring onions
+                                                Soy sauce </span>
+                                                <button class="captionP" type="button">£23</button>
+                                        </div>
+                                    </div>
+                                    <!-- Box End -->
+                                </div>
+                                <div class="item">
+                                    <!-- Box Start -->
+                                    <div class="box">
+                                        <a href="#"><img src="assets/images/our-menu/food menu/boiled yam and fried egg.jpeg" alt="image" title="image" class="img-fluid" /></a>
+                                        <div class="caption">
+                                            <h4>Boiled yam and egg Sauce</h4>
+                                            <span>Yam
+                                                Water
+                                                Salt <br>
+                                               <b> Egg Sauce:</b>
+                                                Eggs
+                                                Tomatoes
+                                                peppers
+                                                Onions
+                                                Vegetable oil
+                                                Seasoning cubes
+                                                Salt
+                                                Garlic
+                                                Crayfish</span>
+                                            <button class="captionP" type="button">£53</button>
+                                        </div>
+                                    </div>
+                                    <!-- Box End -->
+                                </div>
+                                    <!-- Box End -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Popular Dishes End -->
+
+            <!-- Food Menu Start -->
+            <div class="menu">
+                <div class="menu-inner">
+                    <div class="container">
+                        <div class="row ">
+                            <!-- Title Content Start -->
+                            <div class="col-sm-12 col-12 commontop text-center">
+                                <h4>Our Menu</h4>
+                                <div class="divider style-1 center">
+                                    <span class="hr-simple left"></span>
+                                    <i class="icofont icofont-ui-press hr-icon"></i>
+                                    <span class="hr-simple right"></span>
+                                </div>
+                                <p>Indulge in a variety of carefully crafted dishes that combine fresh ingredients with rich flavors. Each meal is designed to delight your taste buds and provide a memorable dining experience. From local favorites to international delicacies, our menu has something for everyone to enjoy.</p>
+                            </div>
+                            <!-- Title Content End -->
+                            <div class="col-sm-12 col-12">
+                                <!--  Menu Tabs Start  -->
+                                <ul class="nav nav-tabs list-inline">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#all" data-toggle="tab" aria-expanded="true">Main Dish</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#breakfast" data-toggle="tab" aria-expanded="false">Side Dish</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#lunch" data-toggle="tab" aria-expanded="false">Appetizers</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#dinner" data-toggle="tab" aria-expanded="false">Desserts</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#drinks" data-toggle="tab" aria-expanded="false">Grills</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#others" data-toggle="tab" aria-expanded="false">Drinks</a>
+                                    </li>
+                                </ul>
+                                <!--  Menu Tabs Start  -->
+
+                                <!--  Menu Tabs Content Start  -->
+                                <div  class="tab-content">
+                                    <!--  Menu Tab Start  -->
+                                    <div class="tab-pane show active" id="all">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-12">
+                                                <!-- Box Start -->
+                                                <diV class="box">
+                                                    <div class="image">
+                                                        <img src="assets/images/our-menu/food menu/boiled plantain and fried egg.jpeg" alt="image" title="image" class="img-fluid" />
+                                                    </div>
+                                                    <div class="caption">
+                                                        <h4>Boiled plantain and egg sauce</h4>
+                                                        <p class="des">Plantain/Egg</p>
+                                                        <span>Lorem ipsum is simply dummy text of the printing and type setting industry.</span>
+                                                        <button class="price">£35.00</button>
+                                                    </div>
+                                                </div>
+                                                <!-- Box End -->
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-12">
+                                                <!-- Box Start -->
+                                                <diV class="box">
+                                                    <div class="image">
+                                                        <img src="assets/images/our-menu/food menu/boiled yam and fried egg.jpeg" alt="image" title="image" class="img-fluid" />
+                                                    </div>
+                                                    <div class="caption">
+                                                        <h4>Boiled Yam and Egg Sauce</h4>
+                                                        <p class="des">Yam / Egg</p>
+                                                        <span>Lorem ipsum is simply dummy text of the printing and type setting industry.</span>
+                                                        <button class="price">£35.00</button>
+                                                    </div>
+                                                </div>
+                                                <!-- Box End -->
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-12">
+                                                <!-- Box Start -->
+                                                <diV class="box">
+                                                    <div class="image">
+                                                        <img src="assets/images/our-menu/food menu/egusi soup.jpeg" alt="image" title="image" class="img-fluid" />
+                                                    </div>
+                                                    <div class="caption">
+                                                        <h4>Egusi Soup</h4>
+                                                        <p class="des">Egusi/ pounded yam</p>
+                                                        <span>Lorem ipsum is simply dummy text of the printing and type setting industry.</span>
+                                                        <button class="price">£35.00</button>
+                                                    </div>
+                                                </div>
+                                                <!-- Box End -->
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-12">
+                                                <!-- Box Start -->
+                                                <diV class="box">
+                                                    <div class="image">
+                                                        <img src="assets/images/our-menu/food menu/fried plantain and beans.jpeg" alt="image" title="image" class="img-fluid" />
+                                                    </div>
+                                                    <div class="caption">
+                                                        <h4>Fried Plantain and beans</h4>
+                                                        <p class="des">Plantain /Beans</p>
+                                                        <span>Lorem ipsum is simply dummy text of the printing and type setting industry.</span>
+                                                        <button class="price">£35.00</button>
+                                                    </div>
+                                                </div>
+                                                <!-- Box End -->
+                                            </div>
+                                    
+                                          
+                                        </div>
+                                    </div>
+                                    <!--  Menu Tab End  -->
+
+                                    <!--  Menu Tab Start  -->
+                                    <div class="tab-pane" id="breakfast">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-12">
+                                                <!-- Box Start -->
+                                                <div class="box">
+                                                    <div class="image">
+                                                        <img src="assets/images/our-menu/food menu/sideMenu/amala.jpeg" alt="image" title="image" class="img-fluid" />
+                                                    </div>
+                                                    <div class="caption">
+                                                        <h4>Amala</h4>
+                                                        <span>Lorem ipsum is simply dummy text of the printing and type setting industry.</span>
+                                                         <button class="price">£35.00</button>
+                                                    </div>
+                                                </div>
+                                                <!-- Box End -->
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-12">
+                                                <!-- Box Start -->
+                                                <diV class="box">
+                                                    <div class="image">
+                                                        <img src="assets/images/our-menu/food menu/sideMenu/eba.jpeg" alt="image" title="image" class="img-fluid" />
+                                                    </div>
+                                                    <div class="caption">
+                                                        <h4>Eba</h4>
+                                                        <p class="des">Cursus / Dictum / Risus</p>
+                                                        <span>Lorem ipsum is simply dummy text of the printing and type setting industry.</span>
+                                                         <button class="price">£35.00</button>
+                                                    </div>
+                                                </div>
+                                                <!-- Box End -->
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-12">
+                                                <!-- Box Start -->
+                                                <diV class="box">
+                                                    <div class="image">
+                                                        <img src="assets/images/our-menu/food menu/sideMenu/friedYam.jpeg" alt="image" title="image" class="img-fluid" />
+                                                    </div>
+                                                    <div class="caption">
+                                                        <h4>Fried Yam</h4>
+                                                        <span>Lorem ipsum is simply dummy text of the printing and type setting industry.</span>
+                                                         <button class="price">£35.00</button>
+                                                    </div>
+                                                </div>
+                                                <!-- Box End -->
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-12">
+                                                <!-- Box Start -->
+                                                <diV class="box">
+                                                    <div class="image">
+                                                        <img src="assets/images/our-menu/food menu/sideMenu/streamedRice.jpeg" alt="image" title="image" class="img-fluid" />
+                                                    </div>
+                                                    <div class="caption">
+                                                        <h4>Streamed Rice</h4>
+                                                        <span>Lorem ipsum is simply dummy text of the printing and type setting industry.</span>
+                                                        <button class="price">£35.00</button>
+                                                    </div>
+                                                </div>
+                                                <!-- Box End -->
+                                            </div>
+                                           
+                                                <!-- Box End -->
+                                
+                                        </div>
+                                    </div>
+                                    <!--  Menu Tab End  -->
+
+                                    <!--  Menu Tab Start  -->
+                                    <div class="tab-pane" id="lunch">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-12">
+                                                <!-- Box Start -->
+                                                <diV class="box">
+                                                    <div class="image">
+                                                        <img src="assets/images/our-menu/food menu/appetizers/chiken pie.jpeg" alt="image" title="image" class="img-fluid" />
+                                                    </div>
+                                                    <div class="caption">
+                                                        <h4>Chicken Pie</h4>
+                                                    
+                                                        <span>Lorem ipsum is simply dummy text of the printing and type setting industry.</span>
+                                                         <button class="price">£35.00</button>
+                                                    </div>
+                                                </div>
+                                                <!-- Box End -->
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-12">
+                                                <!-- Box Start -->
+                                                <diV class="box">
+                                                    <div class="image">
+                                                        <img src="assets/images/our-menu//food menu/appetizers/meat pie.jpeg" alt="image" title="image" class="img-fluid" />
+                                                    </div>
+                                                    <div class="caption">
+                                                        <h4>Meat Pie</h4>
+                                                        <span>Lorem ipsum is simply dummy text of the printing and type setting industry.</span>
+                                                         <button class="price">£35.00</button>
+                                                    </div>
+                                                </div>
+                                                <!-- Box End -->
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-12">
+                                                <!-- Box Start -->
+                                                <diV class="box">
+                                                    <div class="image">
+                                                        <img src="assets/images/our-menu/food menu/appetizers/moi moi.jpeg" alt="image" title="image" class="img-fluid" />
+                                                    </div>
+                                                    <div class="caption">
+                                                        <h4>Moi moi</h4>
+                                                        <span>Lorem ipsum is simply dummy text of the printing and type setting industry.</span>
+                                                         <button class="price">£35.00</button>
+                                                    </div>
+                                                </div>
+                                                <!-- Box End -->
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-12">
+                                                <!-- Box Start -->
+                                                <diV class="box">
+                                                    <div class="image">
+                                                        <img src="assets/images/our-menu/food menu/appetizers/puff puff.jpeg" alt="image" title="image" class="img-fluid" />
+                                                    </div>
+                                                    <div class="caption">
+                                                        <h4>Puff puff</h4>
+                                                        <span>Lorem ipsum is simply dummy text of the printing and type setting industry.</span>
+                                                         <button class="price">£35.00</button>
+                                                    </div>
+                                                </div>
+                                                <!-- Box End -->
+                                            </div>
+                                           
+                                           
+                                        
+                                           
+                                        </div>
+                                    </div>
+                                    <!--  Menu Tab End  -->
+
+                                    <!--  Menu Tab Start  -->
+                                    <div class="tab-pane" id="dinner">
+                                        <div class="row">
+                                          
+                                            <div class="col-md-6 col-sm-6 col-12">
+                                                <!-- Box Start -->
+                                                <diV class="box">
+                                                    <div class="image">
+                                                        <img src="assets/images/our-menu/food menu/dessert/banana bread.jpeg" alt="image" title="image" class="img-fluid" />
+                                                    </div>
+                                                    <div class="caption">
+                                                        <h4>Banana Bread</h4>
+                                                        <span>Lorem ipsum is simply dummy text of the printing and type setting industry.</span>
+                                                         <button class="price">£35.00</button>
+                                                    </div>
+                                                </div>
+                                                <!-- Box End -->
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-12">
+                                                <!-- Box Start -->
+                                                <diV class="box">
+                                                    <div class="image">
+                                                        <img src="assets/images/our-menu/food menu/dessert/akara.jpeg" alt="image" title="image" class="img-fluid" />
+                                                    </div>
+                                                    <div class="caption">
+                                                        <h4>Akara</h4>
+                                                        <span>Lorem ipsum is simply dummy text of the printing and type setting industry.</span>
+                                                         <button class="price">£35.00</button>
+                                                    </div>
+                                                </div>
+                                                <!-- Box End -->
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-12">
+                                                <!-- Box Start -->
+                                                <diV class="box">
+                                                    <div class="image">
+                                                        <img src="assets/images/our-menu/food menu/dessert/chinchin.jpeg" alt="image" title="image" class="img-fluid" />
+                                                    </div>
+                                                    <div class="caption">
+                                                        <h4>ChinChin</h4>
+                                                        <span>Lorem ipsum is simply dummy text of the printing and type setting industry.</span>
+                                                         <button class="price">£35.00</button>
+                                                    </div>
+                                                </div>
+                                                <!-- Box End -->
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-12">
+                                                <!-- Box Start -->
+                                                <diV class="box">
+                                                    <div class="image">
+                                                        <img src="assets/images/our-menu/food menu/dessert/puff-puff.jpeg" alt="image" title="image" class="img-fluid" />
+                                                    </div>
+                                                    <div class="caption">
+                                                        <h4>Puff Puff</h4>
+                                                        <span>Lorem ipsum is simply dummy text of the printing and type setting industry.</span>
+                                                         <button class="price">£35.00</button>
+                                                    </div>
+                                                </div>
+                                                <!-- Box End -->
+                                            </div>
+                                           
+                                          
+                                           
+                                        </div>
+                                    </div>
+                                    <!--  Menu Tab End  -->
+
+                                    <!--  Menu Tab Start  -->
+                                    <div class="tab-pane" id="drinks">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-12">
+                                                <!-- Box Start -->
+                                                <diV class="box">
+                                                    <div class="image">
+                                                        <img src="assets/images/our-menu/food menu/Grill special/asun.jpeg" alt="image" title="image" class="img-fluid" />
+                                                    </div>
+                                                    <div class="caption">
+                                                        <h4>Asun</h4>
+                                                       
+                                                        <span>Lorem ipsum is simply dummy text of the printing and type setting industry.</span>
+                                                         <button class="price">£35.00</button>
+                                                    </div>
+                                                </div>
+                                                <!-- Box End -->
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-12">
+                                                <!-- Box Start -->
+                                                <diV class="box">
+                                                    <div class="image">
+                                                        <img src="assets/images/our-menu/food menu/Grill special/grilled tilipia fish.jpeg" alt="image" title="image" class="img-fluid" />
+                                                    </div>
+                                                    <div class="caption">
+                                                        <h4>Grill Fish</h4>
+                        
+                                                        <span>Lorem ipsum is simply dummy text of the printing and type setting industry.</span>
+                                                         <button class="price">£35.00</button>
+                                                    </div>
+                                                </div>
+                                                <!-- Box End -->
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-12">
+                                                <!-- Box Start -->
+                                                <diV class="box">
+                                                    <div class="image">
+                                                        <img src="assets/images/our-menu/food menu/Grill special/nkwobi.jpeg" alt="image" title="image" class="img-fluid" />
+                                                    </div>
+                                                    <div class="caption">
+                                                        <h4>Nkwobi</h4>
+                            
+                                                        <span>Lorem ipsum is simply dummy text of the printing and type setting industry.</span>
+                                                         <button class="price">£35.00</button>
+                                                    </div>
+                                                </div>
+                                                <!-- Box End -->
+                                            </div>
+                                          
+                                        
+                                        </div>
+                                    </div>
+                                    <!--  Menu Tab End  -->
+
+                                    <!--  Menu Tab Start  -->
+                                    <div class="tab-pane" id="others">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-12">
+                                                <!-- Box Start -->
+                                                <diV class="box">
+                                                    <div class="image">
+                                                        <img src="assets/images/our-menu/Drink menu/soft drink/chapman.jpeg" alt="image" title="image" class="img-fluid" />
+                                                    </div>
+                                                    <div class="caption">
+                                                        <h4>Chapman</h4>
+                                                        <span>Lorem ipsum is simply dummy text of the printing and type setting industry.</span>
+                                                         <button class="price">£35.00</button>
+                                                    </div>
+                                                </div>
+                                                <!-- Box End -->
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-12">
+                                                <!-- Box Start -->
+                                                <diV class="box">
+                                                    <div class="image">
+                                                        <img src="assets/images/our-menu/Drink menu/soft drink/kunnu aya.jpeg" alt="image" title="image" class="img-fluid" />
+                                                    </div>
+                                                    <div class="caption">
+                                                        <h4>Kunnu aya</h4>
+                                                        <span>Lorem ipsum is simply dummy text of the printing and type setting industry.</span>
+                                                         <button class="price">£35.00</button>
+                                                    </div>
+                                                </div>
+                                                <!-- Box End -->
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-12">
+                                                <!-- Box Start -->
+                                                <diV class="box">
+                                                    <div class="image">
+                                                        <img src="assets/images/our-menu/Drink menu/soft drink/palmwine.jpeg" alt="image" title="image" class="img-fluid" />
+                                                    </div>
+                                                    <div class="caption">
+                                                        <h4>Palmwine</h4>
+                                                        <span>Lorem ipsum is simply dummy text of the printing and type setting industry.</span>
+                                                         <button class="price">£35.00</button>
+                                                    </div>
+                                                </div>
+                                                <!-- Box End -->
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-12">
+                                                <!-- Box Start -->
+                                                <diV class="box">
+                                                    <div class="image">
+                                                        <img src="assets/images/our-menu/Drink menu/soft drink/zobo.jpeg" alt="image" title="image" class="img-fluid" />
+                                                    </div>
+                                                    <div class="caption">
+                                                        <h4>Zobo </h4>
+                                                        <span>Lorem ipsum is simply dummy text of the printing and type setting industry.</span>
+                                                         <button class="price">£35.00</button>
+                                                    </div>
+                                                </div>
+                                                <!-- Box End -->
+                                            </div>
+                                          
+                                          
+                                          
+                                        </div>
+                                    </div>
+                                    <!--  Menu Tab End  -->
+                                </div>
+                                <!--  Menu Tabs Content End  -->
+                                <div class="text-center padbot30">
+                                    <a class="btn btn-theme-alt btn-wide" href='menu.html'>view more <i class="icofont icofont-curved-double-right"></i></a>
+                                </div>	
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Food Menu End -->
+
+           
+       <!-- Newsletter Start -->
+            <div id="newsletter">
+                <div class="container">
+                    <div id="subscribe">
+                        <!-- Subscribe Form -->
+                        <form class="form-horizontal" name="subscribe">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-7"> 
+                                    <div class="input-group">
+                                        <span class="news">newsletter</span>
+                                        <p>Get our latest update</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-5 form-group">
+                                    <div class="input-group">
+                                        <input  value="" name="subscribe_email" id="subscribe_email" placeholder="Email" type="text">
+                                        <button class="btn btn-news" type="submit" value="submit">Send</button>
+                                    </div>
+                                </div>
+                            </div> 
+                        </form>
+                        <!-- Subscribe Form -->
+                    </div>
+                </div>
+            </div>
+            <!-- Newsletter End -->
+
+            <!-- Footer Start -->
+            <footer>
+                <div class="container">
+                    <div class="row inner">
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <!-- Footer Widget Start --> 
+                            <h5>Contact Us</h5>
+                            <ul class="list-unstyled contact">
+                                <li><i class="icofont icofont-social-google-map"></i> 20, floor, Restaurant Food & Drinks, Nr, Preston</li>
+                                <li><i class="icofont icofont-phone"></i> 1800 000 0000,<br>+88 123 1234 1234</li>
+                                <li><a href="#"><i class="icofont icofont-ui-message"></i>info@yourdomainname.com</a></li>
+                            </ul>
+                            <!-- Footer Widget End --> 
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <!-- Footer Widget Start --> 
+                            <h5>Information</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Delivery Information</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Sitemap</a></li>
+                            </ul>
+                            <!-- Footer Widget End --> 
+                        </div>
+                        <div class="w-100 d-none d-xs-block"></div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <!-- Footer Widget Start --> 
+                            <h5>Open Hours</h5>
+                            <ul class="list-unstyled">
+                                <li>Monday - Friday : 9 am to 12 am.</li>
+                                <li>Saturday - Sunday : 24 Hour Open</li>
+                                <li>Breakfast : 7 am to 12 pm</li>
+                                <li>Lunch : 12 pm to 7 pm</li>
+                                <li>Dinner : 7 am to 12 am</li>
+                            </ul>
+                            <!-- Footer Widget End --> 
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <!-- Footer Widget Start --> 
+                            <h5>Instagram</h5>
+                            <ul class="list-unstyled insta">
+                                <li><a href="#"><img src="assets/images/instagram/1.jpg" alt="image" /></a></li>
+                                <li><a href="#"><img src="assets/images/instagram/2.jpg" alt="image" /></a></li>
+                                <li><a href="#"><img src="assets/images/instagram/3.jpg" alt="image" /></a></li>
+                                <li><a href="#"><img src="assets/images/instagram/4.jpg" alt="image" /></a></li>
+                                <li><a href="#"><img src="assets/images/instagram/5.jpg" alt="image" /></a></li>
+                                <li><a href="#"><img src="assets/images/instagram/6.jpg" alt="image" /></a></li>
+                            </ul>
+                            <!-- Footer Widget End --> 
+                        </div>
+                    </div>
+
+                </div>
+                <div class="footer-bottom">
+                    <div class="container">
+                        <div class="row powered">
+                            <!--  Copyright Start -->
+                            <div class="col-md-3 col-sm-6 order-md-1">
+                                <img src="assets/images/logo/FANTE (3).png" class="img-fluid" title="logo" alt="logo">
+                            </div>
+                            <div class="col-md-3 col-sm-6 text-right order-md-3">
+                                <!--  Footer Social Start -->
+                                <ul class="list-inline social">
+                                    <li class="list-inline-item"><a href="#" target="_blank"><i class="icofont icofont-social-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" target="_blank"><i class="icofont icofont-social-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" target="_blank"><i class="icofont icofont-social-google-plus"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" target="_blank"><i class="icofont icofont-social-pinterest"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" target="_blank"><i class="icofont icofont-social-instagram"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" target="_blank"><i class="icofont icofont-social-youtube-play"></i></a></li>
+                                </ul>
+                                <!--  Footer Social End -->
+                            </div>
+                            <div class="col-md-6 col-sm-12 text-center order-md-2">
+                                <p>Copyright © <span>OFANTE Restaurant & Drinks</span> 2020. All Rights Reserved.</p>
+                            </div>
+                            <!--  Copyright End -->
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer End  -->
+
+        </div>
+
+        <!-- jquery -->
+        <script src="assets/libs/jquery/jquery.min.js"></script>
+        <!-- jquery Validate -->
+        <script src="assets/libs/jquery-validation/jquery.validate.min.js"></script>
+        <!-- popper js -->
+        <script src="assets/libs/popper/popper.min.js"></script>
+        <!-- bootstrap js -->
+        <script src="assets/libs/bootstrap-4.5.0/js/bootstrap.min.js"></script>
+        <!-- owlcarousel js -->
+        <script src="assets/libs/owlcarousel2/owl.carousel.min.js"></script>
+        <!--inview js code-->
+        <script src="assets/libs/jquery.inview/jquery.inview.min.js"></script>
+        <!--CountTo js code-->
+        <script src="assets/libs/jquery.countTo/jquery.countTo.js"></script>
+        <!-- Animated Headlines js code-->
+        <script src="assets/libs/animated-headlines/animated-headlines.js"></script>
+        <!-- mb.YTPlayer js code-->
+        <script src="assets/libs/mb.YTPlayer/jquery.mb.YTPlayer.min.js"></script>
+        <!--internal js-->
+        <script src="assets/js/internal.js"></script>
+    </body>
+
+</html>
