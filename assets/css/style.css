@@ -4442,5 +4442,9 @@ footer .powered .social li a:hover i{
     .order .search-icon .btn i {
         margin-right: 5px;
     }
+    .slideshow img{
+        width:100%;
+        height: 400px;
+    }
 
 }
