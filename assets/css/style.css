@@ -4431,7 +4431,7 @@ footer .powered .social li a:hover i{
     #form-language .btn-link {
         font-size: 10px;
     }
-}@media (min-width: 320px) and (max-width: 414px) {
+}@media (min-width: 250px) and (max-width: 414px) {
     .slide-detail p {
         height: 29px;
         overflow: hidden;
