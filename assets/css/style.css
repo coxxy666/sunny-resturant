@@ -646,7 +646,8 @@ header #logo{
     margin:15px 0;
 }
 header #logo img{
-    max-height: 200px;
+    height: 100px;
+    width: 150px;
     -webkit-transition:all 0.5s ease;
     -moz-transition:all 0.5s ease;
     -o-transition:all 0.5s ease;
@@ -3518,7 +3519,8 @@ footer .powered .social li a:hover i{
         font-size: 14px;
     }
     header #logo img{
-        max-height: 200px;
+        height: 100px;
+        width: 150px;
     }
     #menu .nav > li {
         margin: 0 10px 0 0;
@@ -4429,22 +4431,40 @@ footer .powered .social li a:hover i{
     #form-language .btn-link {
         font-size: 10px;
     }
-}
-@media (min-width:320px) and  (max-width:414px){
-
+}@media (min-width: 320px) and (max-width: 414px) {
     .slide-detail p {
         height: 29px;
         overflow: hidden;
     }
+    .slide-detail {
+        margin-top: 60%;
+    }
+
     .order .search-icon input {
         width: 185px;
     }
     .order .search-icon .btn i {
         margin-right: 5px;
     }
-    .slideshow img{
-        width:100%;
-        height: 400px;
+    .slideshow > .item > img {
+        display: block; 
+        max-width: 100%; 
+        height: auto;   
     }
 
+    /* .menu .box .caption span{
+        display: none;
+    } */
+
+    .menu .box .caption{
+  margin-left: 150px;
+    }
+/* 
+    .menu .box .caption h4{
+        font-size:12px;
+        font-weight:600;
+        margin-left: 150px;
+        
+    } */
 }
+
